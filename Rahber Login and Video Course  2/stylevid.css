@@ -1,0 +1,9 @@
+
+/* make video scale when you exit full screen*/
+.player {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+#head {
+    text-align: center;
+}

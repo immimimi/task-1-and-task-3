@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styleprofile.css">  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylevid.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <h2 id="head">Lesson 1</h2>
+
+    </div>
+    <iframe class="player" src="https://www.youtube.com/embed/dJc_nrSaCgM?si=SZo_EUmtHcSx-J32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <form>
+        <h6>where do you put the butter and herbs before vacuum sealing the steaks?</h6>
+        <!--checkboxes-->
+        <input id="one" name="one" type="checkbox" style="float: left; margin-top: 5px;">
+        <div style="margin-left: 25px;">
+            To the side of the steaks.
+        </div>
+        <input id="two" name="two" type="checkbox" style="float: left; margin-top: 5px;">
+        <div style="margin-left: 25px;">
+            On top of the steaks.
+        </div>
+        <input id="three" name="three" type="checkbox" style="float: left; margin-top: 5px;">
+        <div style="margin-left: 25px;">
+            Inside the steaks.
+        </div>
+
+
+        <button type="submit" onclick="next()">Submit</button>
+
+    </form>
+
+      <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+        e.preventDefault();  //defult is to reload after submmiting the form, this prevents that
+        });
+        
+        function next() {
+         let checkbox = document.querySelector("#one") //see if the answer is checked   
+         if(checkbox.checked
+          ){
+            alert('Correct!!!')
+            window.location.href="cooking2.html";
+        }
+        else{
+            alert("Incorrect")
+        }
+
+        }
+
+
+      </script>
+
+
+
+
+</body>
+</html>
